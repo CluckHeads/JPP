@@ -25,6 +25,10 @@ public abstract class Product implements Item {
   //    needs to be 1, cannot be 0.
   private static int currentProductionNumber = 1;
 
+  public Product() {
+
+  }
+
   //     Create a constructor
   public Product(String n) {
     // take in the name of the product and set this to the field variable name.
@@ -74,10 +78,10 @@ public abstract class Product implements Item {
   //    toString() to make printing easier
   @Override
   public String toString() {
-    return "Manufacturer   : " + manufacturer + "\n"
-            + "Serial Number  : " + serialNumber + "\n"
-            + "Date           : " + manufacturedOn + "\n"
-            + "Name           : " + name;
+    return "Manufacturer : " + manufacturer + "\n"
+            + "Serial Number : " + serialNumber + "\n"
+            + "Date : " + manufacturedOn + "\n"
+            + "Name : " + name;
   }
 
 }

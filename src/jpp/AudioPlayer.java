@@ -4,7 +4,7 @@ package jpp;
 //  Type:       Class: AudioPlayer
 //  BY:         Kettering, Gage
 //  ORG:        CRN: 80601
-//  DESC:       Main class that allows the program to run
+//  DESC:       class that will allow us to capture the details of an audio player
 //  Resources:  CaveOfProgramming | docs.oracle.com
 //-----------------------------------------------------------------------------
 
@@ -15,6 +15,7 @@ package jpp;
 public class AudioPlayer extends Product implements MultimediaControl {
 
   String audioSpecification;
+  ItemType mediaType;
 
 
   /**
@@ -26,6 +27,8 @@ public class AudioPlayer extends Product implements MultimediaControl {
    */
   public AudioPlayer(String n, String audioSpecifications) {
     super(n);
+    mediaType = ItemType.AUDIO;
+    this.audioSpecification = audioSpecifications;
   }
 
   /**
@@ -62,5 +65,14 @@ public class AudioPlayer extends Product implements MultimediaControl {
   public void next() {
     System.out.println("Going to next song.");
   }
+
+
+  @Override
+  public String toString() {
+    System.out.println(super.toString());
+    return "Audio Spec : " + audioSpecification + "\n"
+            + "Type : " + mediaType + "\n";
+  }
+
 }
 
