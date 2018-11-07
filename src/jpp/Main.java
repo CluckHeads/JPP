@@ -10,10 +10,13 @@ package jpp;
 -------------------------------------------------------------------------------
 */
 
+import java.util.ArrayList;
+
 public class Main {
 
   /**
    * Sets the Widgets and then prints out the information of that widget.
+   *
    * @param args - provides arguments for the String data type.
    */
   public static void main(String[] args) {
@@ -29,6 +32,15 @@ public class Main {
 
   }
 
+  //Still needs work
+  public static ArrayList<Product> testCollection() {
+    AudioPlayer ap1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer ap2 = new AudioPlayer("iPhone X", "MP3");
+
+    ArrayList<Product> products = new ArrayList<Product>();
+    return products;
+  }
 }
+
 
 

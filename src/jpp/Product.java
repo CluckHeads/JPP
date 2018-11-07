@@ -15,39 +15,41 @@ import java.util.Date;
 
 //   Abstract class called Product that implements the interface and the basic
 //   functionality that all items on a production line should have
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable<Item> {
 
+  // Fields
   private Date manufacturedOn;
   private String name;
   private int serialNumber;
   private String manufacturer = Item.manufacturer;
 
-  //    Setting the currentProductionNumber to 1. The first serial number
+  // Setting the currentProductionNumber to 1. The first serial number
   //    needs to be 1, cannot be 0.
   private static int currentProductionNumber = 1;
 
+  // default constructor
   public Product() {
 
   }
 
-  //     Create a constructor
+  // Create a constructor
   public Product(String n) {
     // take in the name of the product and set this to the field variable name.
     name = n;
-    //     Assign a serial number from the current production number
-    //     currentProductionNumber should be incremented
+    // Assign a serial number from the current production number
+    //  currentProductionNumber should be incremented
     serialNumber = currentProductionNumber++;
     // Set manufacturedOn as the current date and time
     manufacturedOn = new Date();
   }
 
-
-  //     serialNumber = prodNumber
+  // serialNumber = prodNumber
   public void setProductionNumber(int prodNumber) {
     serialNumber = prodNumber;
   }
 
 
+  // Implementing getters and setters
   public void setName(String name) {
     this.name = name;
   }
@@ -76,13 +78,19 @@ public abstract class Product implements Item {
     return currentProductionNumber;
   }
 
-  //    toString() to make printing easier
+  // toString() to make printing easier
   @Override
   public String toString() {
     return "Manufacturer : " + manufacturer + "\n"
             + "Serial Number : " + serialNumber + "\n"
             + "Date : " + manufacturedOn + "\n"
             + "Name : " + name;
+  }
+
+  //Implementing the compareTo() methods
+  @Override
+  public int compareTo(Item o) {
+    return 0;
   }
 
 }

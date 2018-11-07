@@ -11,11 +11,12 @@ package jpp;
 -------------------------------------------------------------------------------
 */
 
-public class MoviePlayer extends Product implements MultimediaControl {
-
+public class MoviePlayer extends Product implements MultimediaControl, Comparable<Item> {
+  // Fields
   private Screen screen;
   private MonitorType monitorType;
 
+  // Default Constructor
   public MoviePlayer() {
 
   }
@@ -56,5 +57,11 @@ public class MoviePlayer extends Product implements MultimediaControl {
     super.toString();
     return "Monitor details: " + monitorType + "\n"
             + "Screen details: " + screen + "\n";
+  }
+
+  // Implementing the compareTo() method
+  @Override
+  public int compareTo(Item o) {
+    return 0;
   }
 }
