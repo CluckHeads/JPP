@@ -19,7 +19,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
   String audioSpecification;
   ItemType mediaType;
 
-
   /**
    * constructor that will take in 2 parameters.
    *
@@ -41,7 +40,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Playing.");
   }
 
-
   /**
    * Method that notifies you that the media device is stopping.
    */
@@ -49,7 +47,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
   public void stop() {
     System.out.println("Stopping.");
   }
-
 
   /**
    * Method that notifies you that the media device is going to the previous song.
@@ -59,7 +56,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Going to previous song.");
   }
 
-
   /**
    * Method that notifies you that the media device is going to the next song.
    */
@@ -67,7 +63,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
   public void next() {
     System.out.println("Going to next song.");
   }
-
 
   @Override
   public String toString() {

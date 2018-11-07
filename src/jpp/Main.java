@@ -35,11 +35,22 @@ public class Main {
   //Still needs work
   public static ArrayList<Product> testCollection() {
     AudioPlayer ap1 = new AudioPlayer("iPod Mini", "MP3");
-    AudioPlayer ap2 = new AudioPlayer("iPhone X", "MP3");
+    AudioPlayer ap2 = new AudioPlayer("Walkman", "WAV");
+    MoviePlayer mp1 = new MoviePlayer("Galaxy Tablet",
+            new Screen("HD", 60, 30), MonitorType.LED);
+    MoviePlayer mp2 = new MoviePlayer("iPad",
+            new Screen("HD", 45, 60), MonitorType.LED);
 
     ArrayList<Product> products = new ArrayList<Product>();
+
+    products.add(ap1);
+    products.add(mp1);
+    products.add(ap2);
+    products.add(mp2);
+
     return products;
   }
+
 }
 
 
