@@ -2,15 +2,16 @@ package jpp;
 
 import java.util.Date;
 
-//-----------------------------------------------------------------------------
-//  Type:       Interface: Item
-//  BY:         Kettering, Gage
-//  ORG:        CRN: 80601
-//  DESC:       Contains constant methods that every "Item" would need to
-//                contain
-//  Resources:  CaveOfProgramming | docs.oracle.com
-//-----------------------------------------------------------------------------
-
+/*
+-------------------------------------------------------------------------------
+  Type:       Interface: Item
+  BY:         Kettering, Gage
+  ORG:        CRN: 80601
+  DESC:       Contains constant methods that every "Item" would need to
+                contain
+  Resources:  CaveOfProgramming | docs.oracle.com
+-------------------------------------------------------------------------------
+*/
 
 public interface Item {
 

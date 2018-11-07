@@ -2,15 +2,16 @@ package jpp;
 
 import java.util.Date;
 
-//-----------------------------------------------------------------------------
-//  Type:       Abstract Class: Product - Implementing: Interface Item
-//  BY:         Kettering, Gage
-//  ORG:        CRN: 80601
-//  DESC:       Will implement the basic functionality that all items on a
-//                production line should have
-//  Resources:  CaveOfProgramming | docs.oracle.com
-//-----------------------------------------------------------------------------
-
+/*
+-------------------------------------------------------------------------------
+  Type:       Abstract Class: Product - Implementing: Interface Item
+  BY:         Kettering, Gage
+  ORG:        CRN: 80601
+  DESC:       Will implement the basic functionality that all items on a
+                production line should have
+  Resources:  CaveOfProgramming | docs.oracle.com
+-------------------------------------------------------------------------------
+*/
 
 //   Abstract class called Product that implements the interface and the basic
 //   functionality that all items on a production line should have

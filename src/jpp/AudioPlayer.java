@@ -1,13 +1,15 @@
 package jpp;
 
-//-----------------------------------------------------------------------------
-//  Type:       Class: AudioPlayer
-//  BY:         Kettering, Gage
-//  ORG:        CRN: 80601
-//  DESC:       class that will allow us to capture the details of an audio player
-//  Resources:  CaveOfProgramming | docs.oracle.com
-//-----------------------------------------------------------------------------
-
+/*
+-------------------------------------------------------------------------------
+  Type:       Class: AudioPlayer
+  BY:         Kettering, Gage
+  ORG:        CRN: 80601
+  DESC:       class that will allow us to capture the details of an audio
+                player
+  Resources:  CaveOfProgramming | docs.oracle.com
+-------------------------------------------------------------------------------
+*/
 
 /**
  * A concrete class that will allow us to capture the details of an audio player.

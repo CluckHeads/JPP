@@ -1,13 +1,14 @@
 package jpp;
 
-//-----------------------------------------------------------------------------
-//  Type:       Class: Main
-//  BY:         Kettering, Gage
-//  ORG:        CRN: 80601
-//  DESC:       Main class that allows the program to run
-//  Resources:  CaveOfProgramming | docs.oracle.com
-//-----------------------------------------------------------------------------
-
+/*
+-------------------------------------------------------------------------------
+  Type:       Class: Main
+  BY:         Kettering, Gage
+  ORG:        CRN: 80601
+  DESC:       Main class that allows the program to run
+  Resources:  CaveOfProgramming | docs.oracle.com
+-------------------------------------------------------------------------------
+*/
 
 public class Main {
 
